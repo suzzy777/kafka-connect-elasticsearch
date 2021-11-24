@@ -15,7 +15,7 @@ command:
     git rev-parse HEAD
     mvn test-compile -pl . -am
     mvn -pl . test -Dtest=io.confluent.connect.elasticsearch.elasticsearchwritertest#testmap -DskipTests
-    mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=io.confluent.connect.elasticsearch.elasticsearchwritertest#testmap -DskipTests -DnondexRuns=100 
+    #mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=io.confluent.connect.elasticsearch.elasticsearchwritertest#testmap -DskipTests -DnondexRuns=100 
   # - echo $flakyTests
   #- if [ ! -z "$flakyTests" ]; then printf "Found flaky tests:\n$flakyTests \n" ; exit 1 ; fi
 after_success:
